@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task</title>
+	<script src="Task.js"></script> 
+</head>
+<body>
+<script>
+let autoOne = auto(111);
+let cabriolettOne = cabriolet(111,"mp/h");
+
+autoOne.turnEngineOn();
+autoOne.setSpeed(50);
+cabriolettOne.turnEngineOn();
+cabriolettOne.setSpeed(50);
+cabriolettOne.collapseRoof();
+
+console.log('Auto params:');
+console.log("Auto Max Speed: "+autoOne.getMaxSpeed());
+console.log("Auto Engine Active: "+autoOne.getEngineStatus());
+console.log("Auto Speed: "+autoOne.getSpeed());
+console.log("Auto Speed: "+autoOne.getSpeed());
+console.log("Auto Max Passenger: "+autoOne.getMaxPassengers());
+console.log("Auto Required Licence Category: "+auto.getRequiredLicenseCategory());
+console.log('Cabriolett params:');
+console.log("Cabriolett Engine Active: "+cabriolettOne.getEngineStatus());
+console.log("Cabriolett Speed: "+cabriolettOne.getSpeed());
+console.log("Cabriolet Max Passenger: "+cabriolettOne.getMaxPassengers());
+console.log("Cabriolet Roof Opened: "+cabriolettOne.getRoofStatus());
+</script>
+</body>
+</html>
